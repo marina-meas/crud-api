@@ -25,10 +25,5 @@ dependencies {
 tasks.named('test') {
 	useJUnitPlatform()
 }
-apply plugin: 'java'
 
-// Add compileJava task configuration
-tasks.withType(JavaCompile) {
-    options.compilerArgs += ["-parameters"]
-}
 
