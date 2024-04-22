@@ -26,4 +26,3 @@ tasks.named('test') {
 	useJUnitPlatform()
 }
 
-
