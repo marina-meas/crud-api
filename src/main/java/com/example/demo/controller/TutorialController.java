@@ -32,15 +32,8 @@ public class TutorialController {
 	public ResponseEntity<List<Tutorial>> getAllTutorials() {
 		try {
 			List<Tutorial> tutorials = new ArrayList<Tutorial>();
-// comment
-//			if (title == null)
 				tutorialRepository.findAll().forEach(tutorials::add);
-//			else
-//				tutorialRepository.findByTitleContaining(title).forEach(tutorials::add);
-//
-//			if (tutorials.isEmpty()) {
-//				return new ResponseEntity<>(HttpStatus.NO_CONTENT);
-//			}
+
 
 			return new ResponseEntity<>(tutorials, HttpStatus.OK);
 		} catch (Exception e) {
